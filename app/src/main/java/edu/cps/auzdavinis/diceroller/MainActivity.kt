@@ -17,9 +17,10 @@ class MainActivity : AppCompatActivity() {
         val resultText: TextView = findViewById(R.id.result_text)
         val die1: ImageView = findViewById(R.id.die_image_1)
         val die2: ImageView = findViewById(R.id.die_image_2)
+        val die3: ImageView = findViewById(R.id.die_image_3)
 
         rollButton.setOnClickListener {
-            val total = rollDie(die1) + rollDie(die2)
+            val total = rollDie(die1) + rollDie(die2) + rollDie(die3)
             resultText.text = "Total: $total"
         }
     }
