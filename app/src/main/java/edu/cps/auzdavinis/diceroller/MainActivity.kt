@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
             val total = rollDie(die1) + rollDie(die2) + rollDie(die3)
             resultText.text = "Total: $total"
         }
+
+        oh no buggy werid line ~('-')~
     }
 
     private fun rollDie(image: ImageView): Int {
