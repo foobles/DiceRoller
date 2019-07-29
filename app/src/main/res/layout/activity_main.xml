@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:textSize="33sp"
             android:textAlignment="center"
-            android:text="Tap roll to see score"/>
+            android:text="Tap roll to play."/>
 
     <Button
         android:id = "@+id/roll_button"

@@ -19,8 +19,12 @@ class MainActivity : AppCompatActivity() {
         val die2: ImageView = findViewById(R.id.die_image_2)
 
         rollButton.setOnClickListener {
-            val total = rollDie(die1) + rollDie(die2)
-            resultText.text = "Total: $total"
+            var count = 0
+            val repetitions = 1000
+            repeat(repetitions) {
+                if (rollDie(die1) == rollDie(die2)) ++count
+            }
+            resultText.text = "Percent score: %${count.toDouble() / repetitions * 100}\nTotal: $count"
         }
     }
 
